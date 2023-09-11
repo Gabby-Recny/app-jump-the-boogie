@@ -3,7 +3,7 @@ import './Search.css';
 
 const Search = () => {
     return (
-        <section className="search-contianer">
+        <section className="search-container">
             <p>Search</p>
         </section>
     )
