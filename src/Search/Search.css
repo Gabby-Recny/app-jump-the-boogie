@@ -1,0 +1,8 @@
+.search-contianer {
+    background-image: url('../images/vinyl.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
