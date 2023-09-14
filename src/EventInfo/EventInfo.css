@@ -47,3 +47,17 @@ td {
     justify-content: center;
     margin: 10px;
 }
+
+
+@media screen and (min-width: 749px) {
+    .organizer-info {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #eeeeee;
+        border-radius: 15px;
+        padding: 17px;
+        width: 50%;
+        margin: auto;
+    }
+}
