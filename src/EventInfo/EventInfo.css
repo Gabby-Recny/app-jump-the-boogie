@@ -60,4 +60,15 @@ td {
         width: 50%;
         margin: auto;
     }
+
+    .location-date-info-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .location-date-info-container h3 {
+        text-align: center;
+    }
 }

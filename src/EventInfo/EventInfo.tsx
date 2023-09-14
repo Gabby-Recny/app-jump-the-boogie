@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import './EventInfo.css';
 import eventImage from '../images/eventInfoImage.svg';
 import organizerImage from '../images/organizer.svg'
-import { render } from "@testing-library/react";
 
 const EventInfo = () => {
     const [ tags, setTags ] = useState(["Lorem", "Ipsum", "Bananas", "Brendan", "Glasses", "Plants", "Moon"]);
@@ -16,21 +15,24 @@ const EventInfo = () => {
 
       }
     return (
+        <>
+        <img src={eventImage} alt='Woman dancing at an outdoor music festival' className="event-img"/>
         <section className="event-info-container">
-            <img src={eventImage} alt='Woman dancing at an outdoor music festival' />
             <h2>Event Info</h2>
             <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</h4>
-            <section>
+            <div className="organizer-info">
                 <img src={organizerImage} alt='Cafe'/>
                 <p>Organizer information</p>
-            </section>
-            <section>
-                <h3>Date & Time</h3>
-                <p>5 September, 2013 10:34 AM</p>
-            </section>
-            <section>
-                <h3>Location</h3>
-                <p>3859 Hello There Court Milwaukee, MI 23493245</p>
+            </div>
+            <section className="location-date-info-container">
+                <div>
+                    <h3>Date & Time</h3>
+                    <p>5 September, 2013 10:34 AM</p>
+                </div>
+                <div>
+                    <h3>Location</h3>
+                    <p>3859 Hello There Court Milwaukee, MI 23493245</p>
+                </div>
             </section>
             <section>
                 <h3>About Event</h3>
@@ -49,11 +51,13 @@ const EventInfo = () => {
                         <td>Mexico</td>
                     </tr>
                 </table>
-                <section>
+                <h3>Tags</h3>
+                <div className="tag-container">
                     {renderTags()}
-                </section>
+                </div>
             </section>
         </section>
+        </>
     )
 }
 
