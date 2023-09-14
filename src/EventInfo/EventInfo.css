@@ -1,0 +1,49 @@
+.event-img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0;
+}
+
+h2,
+h3 {
+    text-align: left;
+}
+
+h4 {
+    text-align: center;
+}
+
+.event-info-container {
+    margin: 20px;
+}
+
+.organizer-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.organizer-info > p {
+    display: inline;
+}
+
+td {
+    text-align: center;
+    padding: 2px;
+    color: pink;
+}
+
+.tags {
+    display: inline;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.tag-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
