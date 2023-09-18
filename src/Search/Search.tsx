@@ -4,14 +4,17 @@ import searchIcon from '../images/searchIcon.svg';
 
 const Search = () => {
     const [ searchInput, setSearchInput ] = useState('');
-    const handleSubmission = (event: any) => {
-        event.preventDeault()
+    const handleSubmit = (
+        e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
         console.log('You have hit submit', searchInput)
     }
 
     return (
         <section className="search-container">
-            <form>
+            <form
+                onSubmit={(e) => handleSubmit(e)}
+            >
                 <label>
                     Enter your location:
                 </label>
@@ -24,7 +27,7 @@ const Search = () => {
                     <button 
                         className='search-btn'
                         type="submit"
-                        onClick={(e) => handleSubmission(e)}>
+                    >
                         <img className="search-icon" src={searchIcon} alt="search icon"></img>
                     </button>
                 </div>
