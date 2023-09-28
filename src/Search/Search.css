@@ -1,0 +1,93 @@
+.search-container {
+    background-image: url('../images/vinyl.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.search-container form label {
+    color: #fffaf0;
+    font-size: large;
+    margin-bottom: 8px;
+}
+
+.search-container form div {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container form div input {
+    width: 85%;
+    border: none;
+    border-radius: 10px 0 0px 10px;
+    background-color: #fffaf0;
+}
+
+.search-btn {
+    display: inline;
+    width: 15%;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 0px 10px 10px 0px;
+    border: none;
+    text-align: center;
+    background-color: #fffaf0;
+}
+
+.search-icon {
+    width: 100%;
+}
+
+.search-btn:hover {
+    filter: brightness(115%);
+    cursor: pointer;
+}
+
+.search-btn:focus {
+    filter: brightness(115%);
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+    .search-container form div input {
+        width: 85%;
+        background-color: #fffaf0;
+    }
+
+    .search-container form div button {
+        width: 15%;
+    }
+
+    .search-icon {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 740px) {
+    .search-container form div {
+        height: 12vh;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .search-container form div {
+        height: 14vh;
+    }
+    .search-container form label {
+        font-size: x-large;
+    }
+}
